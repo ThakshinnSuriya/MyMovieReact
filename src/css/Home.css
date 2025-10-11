@@ -3,6 +3,10 @@
   width: 100%;
   box-sizing: border-box;
 }
+.home-dark{
+  background-color: black;
+  color:beige;
+}
 
 .search-form {
   max-width: 600px;

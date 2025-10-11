@@ -2,12 +2,14 @@ import "../css/Home.css";
 import { useState, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
 import { searchMovie, getPopularMovies } from "../services/api";
+import { useTheme } from "../context/ThemeContext";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const {theme}=useTheme()
 
   useEffect(() => {
     const loadPopularMovies = async () => {
