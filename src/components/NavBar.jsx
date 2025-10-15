@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   const { theme, toggleTheme } = useTheme();
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{ backgroundColor: theme === "dark" ?  "#121212":"#f4f4f4" }}>
       <div className="navbar-brand">
         <Link to="/">Movie App</Link>
       </div>
       <div className="navbar-links">
-        <Link to="/" className="nav-link">
+        <Link to="/" className="nav-link" style={{color: theme === "dark" ? "rgba(255, 255, 255, 1)":"rgba(0, 0, 0, 1)"}}>
           Home
         </Link>
-        <Link to="/favorite" className="nav-link">
+        <Link to="/favorite" className="nav-link" style={{color: theme === "dark" ? "rgba(255, 255, 255, 1)":"rgba(0, 0, 0, 1)"}}>
           Favorite
         </Link>
          <button

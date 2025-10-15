@@ -15,7 +15,7 @@
 .favorites-empty {
   text-align: center;
   padding: 4rem 2rem;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(135, 135, 135, 0.379);
   border-radius: 12px;
   margin: 2rem auto;
   max-width: 600px;
@@ -28,7 +28,7 @@
 }
 
 .favorites-empty p {
-  color: #353232;
+  color: #a8a3a3;
   font-size: 1.2rem;
   line-height: 1.6;
 }

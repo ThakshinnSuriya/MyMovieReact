@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #000000;
+ 
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.2s;
-  color: aliceblue;
+  
 }
 
 .nav-link:hover {

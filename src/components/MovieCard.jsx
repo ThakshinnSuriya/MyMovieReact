@@ -29,7 +29,7 @@ export default function MovieCard({ movie }) {
       <a onClick={()=>{
         const youtubeUrl=`https://www.youtube.com/results?search_query=${movie.title}+trailer`
         window.open(youtubeUrl,"_blank")
-      }}>{istrail?<MovieTrailer />:""}</a>
+      }}>
       <div className="movie-poster" onClick={trailer}>
         
         
@@ -38,7 +38,7 @@ export default function MovieCard({ movie }) {
           alt={movie.title} 
         />
        
-      </div>
+      </div></a>
        <div className="movie-overlay">
           <button
             className={`favorite-btn ${favorites ? "active" : ""}`}
